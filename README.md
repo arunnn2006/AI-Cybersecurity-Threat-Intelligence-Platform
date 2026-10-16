@@ -2,6 +2,8 @@
 
 A full-stack security operations demo for event ingestion, rule-based detection, incident response, threat-intelligence enrichment, risk scoring, anomaly scoring, and analyst workflows.
 
+<img width="940" height="428" alt="Screenshot 2026-10-07 223411" src="https://github.com/user-attachments/assets/7d4cd555-ef9f-4a26-b863-6f9f6e48dc97" />
+
 ## Stack
 
 - **API:** FastAPI, SQLAlchemy, Alembic, PostgreSQL
@@ -9,6 +11,9 @@ A full-stack security operations demo for event ingestion, rule-based detection,
 - **Frontend:** React, TypeScript, Vite, Nginx
 - **ML:** scikit-learn Isolation Forest for event anomaly scoring
 - **Tests/CI:** pytest and GitHub Actions
+
+<img width="329" height="244" alt="Screenshot 2026-10-07 223430" src="https://github.com/user-attachments/assets/fb931c4d-d9fd-4484-959e-18f8fe56cb23" />
+
 
 ## Run with Docker Compose
 
@@ -78,6 +83,9 @@ npm run build
 GitHub Actions runs these backend checks and the frontend production build for pushes and pull requests. See [testing and QA](docs/testing-and-qa.md).
 
 ## Security and deployment
+
+<img width="463" height="399" alt="Screenshot 2026-10-07 211339" src="https://github.com/user-attachments/assets/86698672-e242-4d75-bf89-d0e0d06b81ef" />
+
 
 Read [production deployment and readiness](docs/production-deployment.md) before exposing the service. Compose binds the frontend to loopback and leaves PostgreSQL and Redis private to its network. Put a TLS-terminating reverse proxy in front for remote access, use managed secrets and persistent encrypted backups, and verify the readiness endpoint after deployment.
 
